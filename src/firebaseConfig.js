@@ -9,13 +9,13 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: "ads-network-vite.firebaseapp.com",
-  projectId: "ads-network-vite",
-  storageBucket: "ads-network-vite.appspot.com",
-  messagingSenderId: "892207831703",
-  appId: "1:892207831703:web:46fff04d6e881f267ba7d2",
-  databaseURL: "https://ads-network-vite.firebaseio.com"
+  apiKey: "AIzaSyBdfRuTCBusXX4xcBZ2oZdoA88N2eeLx5E",
+  authDomain: "ads-network-vite---v2.firebaseapp.com",
+  projectId: "ads-network-vite---v2",
+  storageBucket: "ads-network-vite---v2.appspot.com",
+  messagingSenderId: "668094578404",
+  appId: "1:668094578404:web:9e8b246ee35e9f83aeb6f1",
+  databaseURL: "https://ads-network-vite---v2.firebaseio.com"
 };
 
 // Initialize Firebase
