@@ -14,17 +14,12 @@ import {
 import { deleteObject, getDownloadURL, ref, uploadBytes } from "firebase/storage"
 import { db, storage, auth } from "../firebaseConfig"
 import { FaUserAlt, FaCloudUploadAlt } from "react-icons/fa"
-import moment from "moment"
 import AdCard from "../components/AdCard"
 // import custom hook
 import useSnapshot from "../utils/useSnapshot"
 
 // The profile page we will send request to Firestore and get data from the users collection of particular document which is the ID of the current user. 
 // We will use useParams to get the ID from the URL.
-
-// format createdAt to month and year with moment.js
-const monthAndYear = date =>
-  `${moment(date).format("MMMM").slice(0, 3)} ${moment(date).format("YYYY")}`
 
 const Profile = () => {
   // Get the ID from the URL
@@ -163,7 +158,7 @@ const Profile = () => {
          )}
         {/* EDIT BUTTON END */}
 
-        <p>Member since {monthAndYear(user.createdAt.toDate())}</p>
+        <p>Member since {user.createdAt.toDate().toLocaleString()}</p>
       </div>
       <div className="col-sm-10 col-md-9">
         <h3>{user.name}</h3>

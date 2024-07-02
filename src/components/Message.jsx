@@ -21,7 +21,17 @@ const Message = ({ msg, user1 }) => {
         {msg.text}
         <br />
         <small>
-         {msg.createdAt.toDate().toDateString()}
+         {msg.createdAt.toDate().toLocaleString("en-US", {
+          year: "numeric",
+          month: "long",
+          weekday: "long",
+          // year: "numeric",
+          // // month: "long",
+          // day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+          // timezone: "utc",
+         })}
         </small>
       </p>
     </div>
