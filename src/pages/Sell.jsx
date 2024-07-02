@@ -6,7 +6,7 @@ import { storage, db, auth } from "../firebaseConfig"
 import { useNavigate } from "react-router-dom"
 
 // define categories and locations for the select dropdown
-const categories = ["Vehicle", "Property", "Electronics"]
+const categories = ["Vehicle", "Property", "Electronics", "Furniture"]
 const locations = ["København", "Aarhus", "Odense", "Aalborg"]
 
 const Sell = () => {
