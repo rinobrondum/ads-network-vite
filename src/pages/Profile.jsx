@@ -96,7 +96,8 @@ const Profile = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [img])
 
-  // console.log(user)
+  // console.log(auth.currentUser?.uid)
+  // console.log(user.uid)
   // console.log(img)
   // console.log(ads)
 
@@ -127,6 +128,8 @@ const Profile = () => {
         ) : (
           <FaUserAlt size={50} />
         )}
+        {/* EDIT BUTTON START */}
+        {user.uid === auth.currentUser?.uid && (
         <div className="dropdown my-3 text-center">
           <button
             className="btn btn-secondary btn-sm dropdown-toggle"
@@ -157,6 +160,9 @@ const Profile = () => {
             ) : null}
           </ul>
         </div>
+         )}
+        {/* EDIT BUTTON END */}
+
         <p>Member since {monthAndYear(user.createdAt.toDate())}</p>
       </div>
       <div className="col-sm-10 col-md-9">
