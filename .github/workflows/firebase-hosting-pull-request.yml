@@ -17,5 +17,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ADS_NETWORK_VITE }}
-          projectId: ads-network-vite
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ADS_NETWORK_VITE___V2 }}
+          projectId: ads-network-vite---v2

@@ -5,7 +5,7 @@ name: Deploy to Firebase Hosting on merge
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ADS_NETWORK_VITE }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ADS_NETWORK_VITE___V2 }}
           channelId: live
-          projectId: ads-network-vite
+          projectId: ads-network-vite---v2

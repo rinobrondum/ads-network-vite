@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "ads-network-vite"
-  }
+    "default": "ads-network-vite---v2",
+    "ads-network": "ads-network-vite---v2"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
