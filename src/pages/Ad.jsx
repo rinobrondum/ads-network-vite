@@ -42,7 +42,6 @@ const Ad = () => {
     getAd()
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-  // console.log(ad)
 
   const deleteAd = async () => {
     const confirm = window.confirm(`Delete ${ad.title}?`)
