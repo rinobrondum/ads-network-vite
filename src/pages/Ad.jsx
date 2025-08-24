@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import Review from "../components/Review"
 import { useParams, useNavigate, Link, useLocation } from "react-router-dom"
 import { deleteDoc, doc, getDoc, setDoc, updateDoc } from "firebase/firestore"
 import { auth, db, storage } from "../firebaseConfig"
@@ -242,6 +243,10 @@ const Ad = () => {
       <div className="mt-5">
         <h3>Description</h3>
         <p>{ad.description}</p>
+      </div>
+      {/* Customer Reviews Section */}
+      <div className="mt-5">
+        <Review adId={id} user={auth.currentUser} />
       </div>
     </div>
   ) : null
