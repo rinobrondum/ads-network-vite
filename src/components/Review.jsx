@@ -58,7 +58,6 @@ const Review = ({ adId, user }) => {
     setReviews(fetchedReviews);
     setLoading(false);
   };
-
   useEffect(() => {
     fetchReviews();
     // Only run when adId changes
